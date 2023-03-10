@@ -1,0 +1,23 @@
+Copy and paste this into windows power shell
+made by akidinatopha
+
+[copy paste zone]
+
+Add-Type -AssemblyName WindowsBase
+Add-Type -AssemblyName PresentationCore
+
+Write-Output "DarthHideous lanschool terminator! Opened at "(get-date).ToString('T');
+Write-Output "To abort at any time, press ESC."
+Write-Output "FOR THE EMPEROR!"
+while($true){
+taskkill /im LSAirClient.exe /f
+taskkill /im LSAirClientUI.exe /f
+  $isDown = [Windows.Input.Keyboard]::IsKeyDown([System.Windows.Input.Key]::Escape)
+  if ($isDown)
+  {
+    Write-Output "Blocker Deactivated. Reopen it to resume blocking"
+    break
+  }
+  }
+  
+[end of copy paste zone]
