@@ -1,3 +1,3 @@
 # lanschool-terminator
-This is a lanschool blocker open the TERMINATELANSCHOOLFILE and follow the commands
+This is a lanschool blocker open the TERMINATELANSCHOOL file and follow the commands
 FOR THE EMEROROR!
